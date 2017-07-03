@@ -2,7 +2,7 @@
 <xpf:xpathFunctions xmlns:xpf="http://www.bea.com/wli/sb/xpath/config">
     <xpf:category id="%OSB_FUNCTIONS%">
         <xpf:function>
-            <xpf:name>lookupBasicCredentials</xpf:name>
+            <xpf:name>lookupBasicCredentialsGG</xpf:name>
             <xpf:comment>%FUNC_CRED_COMMENT%</xpf:comment>
             <xpf:namespaceURI>http://www.bea.com/xquery/xquery-functions</xpf:namespaceURI>
             <xpf:className>com.bea.wli.sb.stages.functions.BasicCredentialsUserFunction</xpf:className>
