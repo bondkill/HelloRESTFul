@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xpf:xpathFunctions xmlns:xpf="http://www.bea.com/wli/sb/xpath/config">
+    <xpf:category id="%OSB_FUNCTIONS%">
+        <xpf:function>
+            <xpf:name>lookupBasicCredentials</xpf:name>
+            <xpf:comment>%FUNC_CRED_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://www.bea.com/xquery/xquery-functions</xpf:namespaceURI>
+            <xpf:className>com.bea.wli.sb.stages.functions.BasicCredentialsUserFunction</xpf:className>
+            <xpf:method>org.apache.xmlbeans.XmlObject lookupBasicCredentials(java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+        <xpf:function>
+            <xpf:name>isUserInGroup</xpf:name>
+            <xpf:comment>%FUNC_USER_IN_GROUP_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://www.bea.com/xquery/xquery-functions</xpf:namespaceURI>
+            <xpf:className>com.bea.wli.sb.stages.functions.IsUserInGroupFunction</xpf:className>
+            <xpf:method>boolean isUserInGroup(java.lang.String, java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+        <xpf:function>
+            <xpf:name>isUserInRole</xpf:name>
+            <xpf:comment>%FUNC_USER_IN_GROUP_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://www.bea.com/xquery/xquery-functions</xpf:namespaceURI>
+            <xpf:className>com.bea.wli.sb.stages.functions.IsUserInRoleFunction</xpf:className>
+            <xpf:method>boolean isUserInRole(java.lang.String, java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+        <xpf:function>
+            <xpf:name>uuid</xpf:name>
+            <xpf:comment>%FUNC_UUID_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://www.bea.com/xquery/xquery-functions</xpf:namespaceURI>
+            <xpf:className>com.bea.wli.sb.stages.functions.UUIDUserFunction</xpf:className>
+            <xpf:method>java.lang.String uuid()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+    </xpf:category>
+	<!-- Begin: ESB_GetCustomerDataInfo user-defined function -->
+	<xpf:category id="%GET_CUSTOMERDATAINFO_ACCOUNT_FUNCTIONS%">
+		<xpf:function>
+            <xpf:name>getAccountStatusDesc</xpf:name>
+            <xpf:comment>%FUNC_GET_STATUS_DESC_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/AccountRuleProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.AccountRuleProvider</xpf:className>
+            <xpf:method>java.lang.String getAccountStatusDesc(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getClassify</xpf:name>
+            <xpf:comment>%FUNC_GET_CLASSIFY_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/AccountRuleProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.AccountRuleProvider</xpf:className>
+            <xpf:method>java.lang.String getClassify(java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getDelinquent</xpf:name>
+            <xpf:comment>%FUNC_GET_DELINQUENT_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/AccountRuleProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.AccountRuleProvider</xpf:className>
+            <xpf:method>java.lang.String getDelinquent(java.lang.String,java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getAccountHistoryStatusDesc</xpf:name>
+            <xpf:comment>%FUNC_GET_STATUS_DESC_FOR_HIS_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/AccountRuleProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.AccountRuleProvider</xpf:className>
+            <xpf:method>java.lang.String getAccountHistoryStatusDesc(java.lang.String,java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+    </xpf:category>
+	<xpf:category id="%GET_CUSTOMERDATAINFO_ERR_FUNCTIONS%">
+		<xpf:function>
+            <xpf:name>getSuccessErrorCode</xpf:name>
+            <xpf:comment>%FUNC_GET_ERR_CODE_SUCCESS_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/ErrorMessageProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.ErrorMessageProvider</xpf:className>
+            <xpf:method>java.lang.String getSuccessErrorCode()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getSuccessMessage</xpf:name>
+            <xpf:comment>%FUNC_GET_ERR_MSG_SUCCESS_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/ErrorMessageProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.ErrorMessageProvider</xpf:className>
+            <xpf:method>java.lang.String getSuccessMessage()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getDNFErrorCode</xpf:name>
+            <xpf:comment>%FUNC_GET_ERR_CODE_DNF_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/ErrorMessageProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.ErrorMessageProvider</xpf:className>
+            <xpf:method>java.lang.String getDNFErrorCode()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getDNFMessage</xpf:name>
+            <xpf:comment>%FUNC_GET_ERR_MSG_DNF_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/ErrorMessageProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.ErrorMessageProvider</xpf:className>
+            <xpf:method>java.lang.String getDNFMessage()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getInternalFailureErrorCode</xpf:name>
+            <xpf:comment>%FUNC_GET_ERR_CODE_INTERNAL_FAILURE_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/ErrorMessageProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.ErrorMessageProvider</xpf:className>
+            <xpf:method>java.lang.String getInternalFailureErrorCode()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getInernalFailureMessage</xpf:name>
+            <xpf:comment>%FUNC_GET_ERR_MSG_INTERNAL_FAILURE_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/ErrorMessageProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.ErrorMessageProvider</xpf:className>
+            <xpf:method>java.lang.String getInernalFailureMessage(java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getServiceUnavailableErrorCode</xpf:name>
+            <xpf:comment>%FUNC_GET_ERR_CODE_UNAVAILABLE_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/ErrorMessageProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.ErrorMessageProvider</xpf:className>
+            <xpf:method>java.lang.String getServiceUnavailableErrorCode()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getServiceUnavailableMessage</xpf:name>
+            <xpf:comment>%FUNC_GET_ERR_MSG_UNAVAILABLE_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/ErrorMessageProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.ErrorMessageProvider</xpf:className>
+            <xpf:method>java.lang.String getServiceUnavailableMessage()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getDontSupportPrepaidErrorCode</xpf:name>
+            <xpf:comment>%FUNC_GET_ERR_CODE_DONT_SUPPORT_PREPAID_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/ErrorMessageProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.ErrorMessageProvider</xpf:className>
+            <xpf:method>java.lang.String getDontSupportPrepaidErrorCode()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getDontSupportPrepaidMessage</xpf:name>
+            <xpf:comment>%FUNC_GET_ERR_MSG_DONT_SUPPORT_PREPAID_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/ErrorMessageProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.ErrorMessageProvider</xpf:className>
+            <xpf:method>java.lang.String getDontSupportPrepaidMessage()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+    </xpf:category>
+	<xpf:category id="%GET_CUSTOMERDATAINFO_LOGGER_FUNCTIONS%">
+		<xpf:function>
+            <xpf:name>getOSBResultStatusDNF</xpf:name>
+            <xpf:comment>%FUNC_GET_OSB_RESULT_STATUS_DNF_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/LoggerProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.LoggerProvider</xpf:className>
+            <xpf:method>java.lang.String getOSBResultStatusDNF()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getOSBResultStatusError</xpf:name>
+            <xpf:comment>%FUNC_GET_OSB_RESULT_STATUS_ERR_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/LoggerProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.LoggerProvider</xpf:className>
+            <xpf:method>java.lang.String getOSBResultStatusError()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getOSBResultStatusSuccess</xpf:name>
+            <xpf:comment>%FUNC_GET_OSB_RESULT_STATUS_SUCCESS_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/LoggerProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.LoggerProvider</xpf:className>
+            <xpf:method>java.lang.String getOSBResultStatusSuccess()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getMonitorSourceTargetProxyService</xpf:name>
+            <xpf:comment>%FUNC_GET_MONITOR_SOURCE_TARGET_PS_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/LoggerProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.LoggerProvider</xpf:className>
+            <xpf:method>java.lang.String getMonitorSourceTargetProxyService()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getMonitorSourceTargetPOJO</xpf:name>
+            <xpf:comment>%FUNC_GET_MONITOR_SOURCE_TARGET_POJO_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/LoggerProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.LoggerProvider</xpf:className>
+            <xpf:method>java.lang.String getMonitorSourceTargetPOJO()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+    </xpf:category>
+	<xpf:category id="%GET_CUSTOMERDATAINFO_OFFER_REFERENCEE_FUNCTIONS%">
+		<xpf:function>
+            <xpf:name>getServiceLevelDisplayText</xpf:name>
+            <xpf:comment>%FUNC_GET_OFFER_SERVICE_LEVEL_DISPLAY_TEXT_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/OfferRuleProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.OfferRuleProvider</xpf:className>
+            <xpf:method>java.lang.String getServiceLevelDisplayText(java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+    </xpf:category>
+	<xpf:category id="%GET_CUSTOMERDATAINFO_SERVICE_AGREEMENT_FUNCTIONS%">
+		<xpf:function>
+            <xpf:name>getFutureStatusCode</xpf:name>
+            <xpf:comment>%FUNC_GET_FUTURE_STATUS_CODE_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/ServiceAgreementRuleProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.ServiceAgreementRuleProvider</xpf:className>
+            <xpf:method>java.lang.String getFutureStatusCode()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getActiveStatusCode</xpf:name>
+            <xpf:comment>%FUNC_GET_ACTIVE_STATUS_CODE_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/ServiceAgreementRuleProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.ServiceAgreementRuleProvider</xpf:className>
+            <xpf:method>java.lang.String getActiveStatusCode()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getCancelStatusCode</xpf:name>
+            <xpf:comment>%FUNC_GET_CANCEL_STATUS_CODE_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/ServiceAgreementRuleProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.ServiceAgreementRuleProvider</xpf:className>
+            <xpf:method>java.lang.String getCancelStatusCode()</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+    </xpf:category>
+	<xpf:category id="%GET_CUSTOMERDATAINFO_SUBSCRIBER_FUNCTIONS%">
+		<xpf:function>
+            <xpf:name>isCancelStatus</xpf:name>
+            <xpf:comment>%FUNC_IS_CANCEL_SUB_STATUS%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/SubscriberRuleProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.SubscriberRuleProvider</xpf:className>
+            <xpf:method>java.lang.String isCancelStatus(java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getMultiSimLevel</xpf:name>
+            <xpf:comment>%FUNC_GET_MULTISIM_LEVEL%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/SubscriberRuleProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.SubscriberRuleProvider</xpf:className>
+            <xpf:method>java.lang.String getMultiSimLevel(java.lang.String, java.lang.String, java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+		<xpf:function>
+            <xpf:name>getSubStatusDesc</xpf:name>
+            <xpf:comment>%FUNC_GET_SUB_STATUS_DESC_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/SubscriberRuleProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.SubscriberRuleProvider</xpf:className>
+            <xpf:method>java.lang.String getSubStatusDesc(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+    </xpf:category>
+	<xpf:category id="%GET_CUSTOMERDATAINFO_SUBSCRIBER_PARAM_FUNCTIONS%">
+		<xpf:function>
+            <xpf:name>getDisplayParamValue</xpf:name>
+            <xpf:comment>%FUNC_GET_DISPLAY_PARAM_VALUE_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/SubscriberParameterRuleProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.SubscriberParameterRuleProvider</xpf:className>
+            <xpf:method>java.lang.String getDisplayParamValue(java.lang.String, java.lang.String, java.lang.String, java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+    </xpf:category>
+	<xpf:category id="%GET_CUSTOMERDATAINFO_COLLECTION_FUNCTIONS%">
+		<xpf:function>
+            <xpf:name>getPolicyStepStatusDesc</xpf:name>
+            <xpf:comment>%FUNC_GET_COLL_POLICY_STEP_STATUS_DESC_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/CollectionRuleProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.CollectionRuleProvider</xpf:className>
+            <xpf:method>java.lang.String getPolicyStepStatusDesc(java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+    </xpf:category>	
+	
+    <xpf:category id="%GET_CUSTOMERDATAINFO_CONVERT_DATE_FUNCTIONS%">
+		<xpf:function>
+            <xpf:name>convertDateFormat</xpf:name>
+            <xpf:comment>%FUNC_CONVERT_DATE_FORMAT_COMMENT%</xpf:comment>
+            <xpf:namespaceURI>http://provider.interfaces.customerrule.internallib.cdm.ei.tit.com/DateTimeProvider</xpf:namespaceURI>
+            <xpf:className>com.tit.ei.cdm.internallib.customerrule.interfaces.provider.DateTimeProvider</xpf:className>
+            <xpf:method>java.lang.String convertDateFormat(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</xpf:method>
+            <xpf:isDeterministic>false</xpf:isDeterministic>
+            <xpf:scope>Pipeline</xpf:scope>
+            <xpf:scope>SplitJoin</xpf:scope>
+        </xpf:function>
+    </xpf:category>
+	
+	<!-- End: ESB_GetCustomerDataInfo user-defined function -->
+</xpf:xpathFunctions>
